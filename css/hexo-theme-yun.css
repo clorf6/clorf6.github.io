@@ -191,7 +191,7 @@ html.dark {
   color: #000;
 }
 body {
-  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
+  font-family: 'Noto Serif SC', 'Songti SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -327,6 +327,21 @@ body::before {
   to {
     opacity: 1;
   }
+}
+body {
+  cursor: url("https://cdn.yunyoujun.cn/css/md-cursors/pointer.cur"), auto;
+}
+a {
+  cursor: url("https://cdn.yunyoujun.cn/css/md-cursors/link.cur"), auto;
+}
+a:hover {
+  cursor: url("https://cdn.yunyoujun.cn/css/md-cursors/link.cur"), auto;
+}
+.hty-icon-button {
+  cursor: url("https://cdn.yunyoujun.cn/css/md-cursors/link.cur"), pointer;
+}
+input {
+  cursor: url("https://cdn.yunyoujun.cn/css/md-cursors/text.cur"), auto;
 }
 :root {
   --banner-char-bg-color: rgba(255,255,255,0.5);
@@ -881,7 +896,7 @@ body::before {
 }
 .wordcloud #wordcloud-canvas,
 .wordcloud #wordcloud-sidebar-canvas {
-  cursor: url("$cursor-pointer"), pointer;
+  cursor: url("https://cdn.yunyoujun.cn/css/md-cursors/link.cur"), pointer;
 }
 .wordcloud #wordbox {
   pointer-events: none;
@@ -1398,7 +1413,7 @@ body::before {
   background: rgba(0,0,0,0.3);
 }
 .post-collapse .collection-title .archive-year {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
   color: #000;
   margin: 0 1.5rem;
 }
@@ -1462,7 +1477,7 @@ body::before {
   margin-right: 0.3rem;
 }
 .post-collapse .post-header .post-meta {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
   font-size: 1rem;
   margin: 1rem 0 1rem 1.2rem;
   white-space: nowrap;
@@ -1536,11 +1551,11 @@ body::before {
 .markdown-body {
   color: var(--hty-text-color);
   font-weight: 400;
-  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
+  font-family: 'Noto Serif SC', 'Songti SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
 }
 .markdown-body code,
 .markdown-body pre {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
 }
 .markdown-body blockquote {
   padding: 0.6rem 1rem;
@@ -1784,7 +1799,7 @@ body::before {
   color: #db2828;
 }
 .post-toc ol .toc-number {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
 }
 .post-toc ol .toc-child {
   font-size: 1rem;
@@ -1800,7 +1815,7 @@ body::before {
   max-height: 10000px;
 }
 :root {
-  --sidebar-bg-image: url("https://cdn.yunyoujun.cn/img/bg/alpha-stars-timing-1.webp");
+  --sidebar-bg-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg");
 }
 #menu-btn {
   display: none;
@@ -1853,7 +1868,7 @@ body::before {
   background-color: var(--sidebar-bg-color, #fff);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom 1rem center;
+  background-position: bottom 3rem center;
   text-align: center;
   z-index: 10;
   transition-property: all;
