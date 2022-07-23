@@ -2098,14 +2098,9 @@ input {
   font-style: normal;
   text-decoration: underline;
 }
-:root {
-  --search-bg-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg");
-}
-html.dark {
-  --search-bg-image: url("https://cdn.yunyoujun.cn/img/bg/mountain-blur-30px.jpg");
-}
 .search-popup {
-  background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg");
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
