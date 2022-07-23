@@ -124,7 +124,7 @@ html.dark {
   --hty-secondary-text-color: #555;
   --post-block-bg-color: #fff;
   --smc-link-color: #000;
-  --yun-bg-image: url("https://cdn.yunyoujun.cn/img/bg/stars-timing-0-blur-30px.jpg");
+  --yun-bg-image: url("/images/background.jpg");
   --banner-line-color: #000;
   --banner-char-color: #000;
 }
@@ -191,7 +191,7 @@ html.dark {
   color: #000;
 }
 body {
-  font-family: 'Noto Serif SC', 'Songti SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -294,14 +294,14 @@ body::before {
   background-repeat: no-repeat;
   animation-name: bgFadeIn;
   animation-duration: 2s;
-  opacity: 1;
+  opacity: 0.8;
 }
 @-moz-keyframes bgFadeIn {
   from {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 @-webkit-keyframes bgFadeIn {
@@ -309,7 +309,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 @-o-keyframes bgFadeIn {
@@ -317,7 +317,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 @keyframes bgFadeIn {
@@ -325,7 +325,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 body {
@@ -1551,7 +1551,7 @@ input {
 .markdown-body {
   color: var(--hty-text-color);
   font-weight: 400;
-  font-family: 'Noto Serif SC', 'Songti SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
 }
 .markdown-body code,
 .markdown-body pre {
@@ -1815,7 +1815,7 @@ input {
   max-height: 10000px;
 }
 :root {
-  --sidebar-bg-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg");
+  --sidebar-bg-image: url("/images/background.jpg");
 }
 #menu-btn {
   display: none;
