@@ -124,7 +124,7 @@ html.dark {
   --hty-secondary-text-color: #555;
   --post-block-bg-color: #fff;
   --smc-link-color: #000;
-  --yun-bg-image: url("https://cdn.yunyoujun.cn/img/bg/stars-timing-0-blur-30px.jpg");
+  --yun-bg-image: url("/images/background.jpg");
   --banner-line-color: #000;
   --banner-char-color: #000;
 }
@@ -1816,7 +1816,7 @@ input {
   max-height: 10000px;
 }
 :root {
-  --sidebar-bg-image: url("/images/background.jpg");
+  --sidebar-bg-image: url("https://cdn.yunyoujun.cn/img/bg/alpha-stars-timing-1.webp");
 }
 #menu-btn {
   display: none;
