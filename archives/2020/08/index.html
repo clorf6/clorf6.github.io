@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });</script><script src="https://npm.elemecdn.com/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer type="module"></script><script src="https://npm.elemecdn.com/vue@2.6.14"></script><link rel="icon" type="image/png" href="/images/favicon.ico"><link rel="mask-icon" href="/images/favicon.ico" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="dns-prefetch" href="https://cos.yunyoujun.cn"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://npm.elemecdn.com/" crossorigin><script id="yun-config">
     window.Yun = {}
-    window.CONFIG = {"hostname":"clorf.top","root":"/","title":["clorf","的","博","客"],"version":"1.10.11","mode":"auto","copycode":true,"page":{"isPost":false},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"algolia":{"appID":"I6HHNPHN8Z","apiKey":"2f97a3b46a7f574a5701695f2dc7bc5c","indexName":"hexo","hits":{"per_page":10}},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]},"vendors":{"host":"https://npm.elemecdn.com/","darken":"https://npm.elemecdn.com/darken@1.5.0"}};
+    window.CONFIG = {"hostname":"blog.clorf.top","root":"/","title":["clorf","的","博","客"],"version":"1.10.11","mode":"auto","copycode":true,"page":{"isPost":false},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"local_search":{"path":"/search.xml"},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]},"vendors":{"host":"https://npm.elemecdn.com/","darken":"https://npm.elemecdn.com/darken@1.5.0"}};
   </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><link rel="alternate" href="/atom.xml" title="clorf's blog" type="application/atom+xml"><meta property="og:type" content="website">
 <meta property="og:title" content="归档">
-<meta property="og:url" content="http://clorf.top/archives/2020/08/index.html">
+<meta property="og:url" content="http://blog.clorf.top/archives/2020/08/index.html">
 <meta property="og:site_name" content="clorf&#39;s blog">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="clorf">
@@ -35,7 +35,7 @@ getScript("https://npm.elemecdn.com/mermaid/dist/mermaid.min.js", () => {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+<!-- hexo injector head_end end --><link rel="stylesheet" href="/css/prism.css" type="text/css"></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
 IconifyProviders = {
   // Empty prefix: overwrite default API provider configuration
   '': {
@@ -85,7 +85,7 @@ blog_live_time();
     }
   });
 });
-</script><script defer src="https://npm.elemecdn.com/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script><script defer src="https://npm.elemecdn.com/instantsearch.js@4/dist/instantsearch.production.min.js"></script><script defer src="/js/search/algolia-search.js" type="module"></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><span class="icon iconify" data-icon="ri:close-line"></span></span></div><div class="search-input-container"></div><div class="algolia-results"><div id="algolia-stats"></div><div id="algolia-hits"></div><div class="algolia-pagination" id="algolia-pagination"></div></div></div><script>function initMourn() {
+</script><script src="https://npm.elemecdn.com/hexo-generator-searchdb@1.4.0/dist/search.js"></script><script src="/js/search/local-search.js" defer type="module"></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><span class="icon iconify" data-icon="ri:close-line"></span></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div class="search-result-container"></div></div><script>function initMourn() {
   const date = new Date();
   const today = (date.getMonth() + 1) + "-" + date.getDate()
   const mourn_days = ["4-4","9-18","12-13"]
@@ -103,25 +103,13 @@ mediumZoom(images)</script><style>.medium-zoom-image {
         <a class="tree-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/">
           游记
         </a>
-      <span class="tree-list-count">3</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/a5d766e7/" title="CSP2020 退役记"><i class="post-icon gg-file-document"></i>CSP2020 退役记</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/fb851a3c/" title="NOIP2018 爆零记"><i class="post-icon gg-file-document"></i>NOIP2018 爆零记</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/f9b0635a/" title="NOIP2020 炸🐟记"><i class="post-icon gg-file-document"></i>NOIP2020 炸🐟记</a></li></ul></li>
+      <span class="tree-list-count">3</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/fb851a3c/" title="NOIP2018 爆零记"><i class="post-icon gg-file-document"></i>NOIP2018 爆零记</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/f9b0635a/" title="NOIP2020 炸🐟记"><i class="post-icon gg-file-document"></i>NOIP2020 炸🐟记</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/a5d766e7/" title="CSP2020 退役记"><i class="post-icon gg-file-document"></i>CSP2020 退役记</a></li></ul></li>
       <li class="tree-list-item">
         <i class="toggle-post-icon gg-folder-add"></i>
         <a class="tree-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
           数据结构
         </a>
-      <span class="tree-list-count">6</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/b522cf3a/" title="「BJWC2008」序列"><i class="post-icon gg-file-document"></i>「BJWC2008」序列</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/84f3cf8f/" title="「Test」序列"><i class="post-icon gg-file-document"></i>「Test」序列</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/278d995e/" title="「Test」树"><i class="post-icon gg-file-document"></i>「Test」树</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/eae2c408/" title="「Test」底垫垫"><i class="post-icon gg-file-document"></i>「Test」底垫垫</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/3a0beec9/" title="「Test」树上排列"><i class="post-icon gg-file-document"></i>「Test」树上排列</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/109caccc/" title="「Test」送花"><i class="post-icon gg-file-document"></i>「Test」送花</a></li></ul></li>
-      <li class="tree-list-item">
-        <i class="toggle-post-icon gg-folder-add"></i>
-        <a class="tree-list-link" href="/categories/DP/">
-          DP
-        </a>
-      <span class="tree-list-count">9</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/6b6e0e64/" title="「HNOI2008」玩具装箱"><i class="post-icon gg-file-document"></i>「HNOI2008」玩具装箱</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/d7ecf815/" title="「Test」卷"><i class="post-icon gg-file-document"></i>「Test」卷</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/bd41e00f/" title="「Test」打字机"><i class="post-icon gg-file-document"></i>「Test」打字机</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/9c0c6c05/" title="「Test」竞赛图"><i class="post-icon gg-file-document"></i>「Test」竞赛图</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/e271cf43/" title="「Test」粉丝"><i class="post-icon gg-file-document"></i>「Test」粉丝</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/6036c6e6/" title="「Test」糖果"><i class="post-icon gg-file-document"></i>「Test」糖果</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/6036c6e6/" title="「Test」糖果"><i class="post-icon gg-file-document"></i>「Test」糖果</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/eccb7ab2/" title="「Test」蛋爆爆/第一题"><i class="post-icon gg-file-document"></i>「Test」蛋爆爆/第一题</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/cb3b4263/" title="概率期望 DP 总结"><i class="post-icon gg-file-document"></i>概率期望 DP 总结</a></li></ul></li>
-      <li class="tree-list-item">
-        <i class="toggle-post-icon gg-folder-add"></i>
-        <a class="tree-list-link" href="/categories/%E6%90%9C%E7%B4%A2/">
-          搜索
-        </a>
-      <span class="tree-list-count">2</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/1038ba82/" title="「POJ1011」Sticks"><i class="post-icon gg-file-document"></i>「POJ1011」Sticks</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/c3a0bcf9/" title="「Test」埃及分数"><i class="post-icon gg-file-document"></i>「Test」埃及分数</a></li></ul></li>
+      <span class="tree-list-count">6</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/b522cf3a/" title="「BJWC2008」序列"><i class="post-icon gg-file-document"></i>「BJWC2008」序列</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/84f3cf8f/" title="「Test」序列"><i class="post-icon gg-file-document"></i>「Test」序列</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/eae2c408/" title="「Test」底垫垫"><i class="post-icon gg-file-document"></i>「Test」底垫垫</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/278d995e/" title="「Test」树"><i class="post-icon gg-file-document"></i>「Test」树</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/3a0beec9/" title="「Test」树上排列"><i class="post-icon gg-file-document"></i>「Test」树上排列</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/109caccc/" title="「Test」送花"><i class="post-icon gg-file-document"></i>「Test」送花</a></li></ul></li>
       <li class="tree-list-item">
         <i class="toggle-post-icon gg-folder-add"></i>
         <a class="tree-list-link" href="/categories/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
@@ -130,16 +118,16 @@ mediumZoom(images)</script><style>.medium-zoom-image {
       <span class="tree-list-count">10</span><ul class="tree-list-children">
       <li class="tree-list-item">
         <i class="toggle-post-icon gg-folder-add"></i>
-        <a class="tree-list-link" href="/categories/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/%E5%A4%9A%E9%A1%B9%E5%BC%8F/">
-          多项式
-        </a>
-      <span class="tree-list-count">2</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/cb634646/" title="「HNOI2019」白兔之舞"><i class="post-icon gg-file-document"></i>「HNOI2019」白兔之舞</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/28c9333b/" title="「清华集训 2017」生成树计数"><i class="post-icon gg-file-document"></i>「清华集训 2017」生成树计数</a></li></ul></li>
-      <li class="tree-list-item">
-        <i class="toggle-post-icon gg-folder-add"></i>
         <a class="tree-list-link" href="/categories/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/">
           组合计数
         </a>
       <span class="tree-list-count">5</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/f03871c/" title="「CF838D」Airplane Arrangements"><i class="post-icon gg-file-document"></i>「CF838D」Airplane Arrangements</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/c9373ef0/" title="「Test」字符串"><i class="post-icon gg-file-document"></i>「Test」字符串</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/bd9567da/" title="「Test」求和"><i class="post-icon gg-file-document"></i>「Test」求和</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/fb8ee37b/" title="「Test」简单题"><i class="post-icon gg-file-document"></i>「Test」简单题</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/32f4def3/" title="「Test」高考考"><i class="post-icon gg-file-document"></i>「Test」高考考</a></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/%E5%A4%9A%E9%A1%B9%E5%BC%8F/">
+          多项式
+        </a>
+      <span class="tree-list-count">2</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/cb634646/" title="「HNOI2019」白兔之舞"><i class="post-icon gg-file-document"></i>「HNOI2019」白兔之舞</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/28c9333b/" title="「清华集训 2017」生成树计数"><i class="post-icon gg-file-document"></i>「清华集训 2017」生成树计数</a></li></ul></li>
       <li class="tree-list-item">
         <i class="toggle-post-icon gg-folder-add"></i>
         <a class="tree-list-link" href="/categories/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/">
@@ -160,10 +148,22 @@ mediumZoom(images)</script><style>.medium-zoom-image {
       <span class="tree-list-count">1</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/9ce2f2f9/" title="线性代数总结"><i class="post-icon gg-file-document"></i>线性代数总结</a></li></ul></li></ul></li>
       <li class="tree-list-item">
         <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/DP/">
+          DP
+        </a>
+      <span class="tree-list-count">9</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/6b6e0e64/" title="「HNOI2008」玩具装箱"><i class="post-icon gg-file-document"></i>「HNOI2008」玩具装箱</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/d7ecf815/" title="「Test」卷"><i class="post-icon gg-file-document"></i>「Test」卷</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/bd41e00f/" title="「Test」打字机"><i class="post-icon gg-file-document"></i>「Test」打字机</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/e271cf43/" title="「Test」粉丝"><i class="post-icon gg-file-document"></i>「Test」粉丝</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/6036c6e6/" title="「Test」糖果"><i class="post-icon gg-file-document"></i>「Test」糖果</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/9c0c6c05/" title="「Test」竞赛图"><i class="post-icon gg-file-document"></i>「Test」竞赛图</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/6036c6e6/" title="「Test」糖果"><i class="post-icon gg-file-document"></i>「Test」糖果</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/eccb7ab2/" title="「Test」蛋爆爆/第一题"><i class="post-icon gg-file-document"></i>「Test」蛋爆爆/第一题</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/cb3b4263/" title="概率期望 DP 总结"><i class="post-icon gg-file-document"></i>概率期望 DP 总结</a></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E6%90%9C%E7%B4%A2/">
+          搜索
+        </a>
+      <span class="tree-list-count">2</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/1038ba82/" title="「POJ1011」Sticks"><i class="post-icon gg-file-document"></i>「POJ1011」Sticks</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/c3a0bcf9/" title="「Test」埃及分数"><i class="post-icon gg-file-document"></i>「Test」埃及分数</a></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
         <a class="tree-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">
           基础算法
         </a>
-      <span class="tree-list-count">6</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/1866bf0a/" title="「SHOI2017」期末考试"><i class="post-icon gg-file-document"></i>「SHOI2017」期末考试</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/be2ec602/" title="「SCOI2010」传送带"><i class="post-icon gg-file-document"></i>「SCOI2010」传送带</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/772b3a4b/" title="「Test」字符串题"><i class="post-icon gg-file-document"></i>「Test」字符串题</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/f447f1d7/" title="「Test」稻草富翁"><i class="post-icon gg-file-document"></i>「Test」稻草富翁</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/e0ae5e26/" title="「ZOJ3203」Light Bulb"><i class="post-icon gg-file-document"></i>「ZOJ3203」Light Bulb</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/7481085d/" title="三分法"><i class="post-icon gg-file-document"></i>三分法</a></li></ul></li>
+      <span class="tree-list-count">6</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/be2ec602/" title="「SCOI2010」传送带"><i class="post-icon gg-file-document"></i>「SCOI2010」传送带</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/1866bf0a/" title="「SHOI2017」期末考试"><i class="post-icon gg-file-document"></i>「SHOI2017」期末考试</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/772b3a4b/" title="「Test」字符串题"><i class="post-icon gg-file-document"></i>「Test」字符串题</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/f447f1d7/" title="「Test」稻草富翁"><i class="post-icon gg-file-document"></i>「Test」稻草富翁</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/e0ae5e26/" title="「ZOJ3203」Light Bulb"><i class="post-icon gg-file-document"></i>「ZOJ3203」Light Bulb</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/7481085d/" title="三分法"><i class="post-icon gg-file-document"></i>三分法</a></li></ul></li>
       <li class="tree-list-item">
         <i class="toggle-post-icon gg-folder-add"></i>
         <a class="tree-list-link" href="/categories/%E5%9B%BE%E8%AE%BA/">

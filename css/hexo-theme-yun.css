@@ -958,8 +958,7 @@ input {
 .pagination .prev.current,
 .pagination .next.current,
 .pagination .page-number.current,
-.pagination .space.current,
-.algolia-pagination .current .page-number {
+.pagination .space.current {
   font-weight: normal;
   background: var(--page-btn-active-bg-color);
   color: var(--hty-bg-color) !important;
@@ -2069,82 +2068,38 @@ input {
 .progress-circle-container {
   position: absolute;
 }
-.ais-SearchBox {
-  margin: 0 auto;
-  width: 100% !important;
-  max-width: 100% !important;
-  position: static !important;
-}
-.ais-SearchBox-input {
-  padding: 0.2rem;
+#local-search-input {
   outline: none;
-  font-size: 1.2rem;
-  width: 100%;
-  border: none;
-  padding-left: 0px;
-  line-height: 1;
 }
-.algolia-powered {
-  float: right;
-}
-.algolia-powered img {
-  display: inline-block;
-  height: 1.2rem;
-  vertical-align: middle;
-}
-.algolia-results {
-  position: relative;
+.search-result-container {
   overflow: auto;
-  padding: 10px 30px;
-  height: calc(100% - 150px);
+  margin: 0;
+  padding: 0.5rem 0 1rem 0;
+  height: calc(100% - 160px);
 }
-.algolia-results hr {
-  margin-top: 10px;
-  margin-bottom: 0;
+.search-result-container ul.search-result-list {
+  margin: 0;
+  padding: 0;
 }
-.algolia-hit-item {
-  display: flex;
-  justify-content: center;
-}
-.algolia-hit-item-link {
+.search-result-container ul.search-result-list li {
   display: block;
   width: 100%;
-  padding: 0.5rem;
-  border-bottom: 1px dashed #ccc;
+  padding: 0.6rem 0;
+}
+.search-result-container ul.search-result-list li .search-result-title {
   font-family: 'Noto Serif SC', ui-sans-serif, BlinkMacSystemFont, 'Times New Roman', 'Songti SC', STZhongsong, STKaiti, KaiTi, serif;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1.2rem;
-  max-width: 800px;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-delay: 0s;
 }
-.algolia-hit-item-link mark {
-  color: #db2828;
-  font-family: 900;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.algolia-pagination .ais-Pagination-list {
-  padding-inline-start: 0;
-}
-.algolia-pagination .pagination-item {
-  display: inline-block;
-  list-style-type: none;
-}
-.algolia-pagination .page-number {
-  border-top: none;
-}
-.algolia-pagination .current .page-number {
-  background-color: var(--hty-text-color) !important;
-}
-.algolia-pagination .disabled-item {
-  display: none;
-}
-.ais-Hits-list {
+.search-result-container ul.search-result-list li .search-result {
   margin: 0;
-  list-style-type: none;
-  padding-inline-start: 0;
+  font-size: 0.8rem;
+}
+.search-result-container ul.search-result-list li .search-result .search-keyword {
+  background: transparent;
+  color: #f00;
+  font-style: normal;
+  text-decoration: underline;
 }
 .search-popup {
   backdrop-filter: blur(30px);
