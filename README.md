@@ -5,7 +5,7 @@
 
 | 地址 | 内容 |
 | --- | --- |
-| `clorf.top/` | 暂时跳转到 blog.clorf.top |
+| `clorf.top/` | 暂时 404（没有 index.html；`.nojekyll` 防止 GitHub 把 README 渲染成首页） |
 | `clorf.top/CV` | 跳转到 `/CV.pdf` |
 | `clorf.top/CV.pdf` | CV 本体 |
 
